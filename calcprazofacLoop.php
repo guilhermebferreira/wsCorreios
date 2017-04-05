@@ -1,5 +1,11 @@
 <?php
 
+/**
+
+	LOOP para tentar identificar algum código de serviõ valido para o método CalcPrecoFAC
+	
+*/
+
 $domainname = 'http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx';
 //	/calculador/CalcPrecoPrazo.asmx/CalcPrecoFAC?nCdServico=string&nVlPeso=string&strDataCalculo=string HTTP/1.1
 
@@ -17,7 +23,7 @@ $parametros = new stdClass();
 $parametros->nVlPeso = '10';
 $parametros->strDataCalculo = date("Y-m-d");
 
-for ($i = 1; $i < 1000; $i++) {
+for ($i = 40010; $i < 41106; $i++) {
     $serverurl = $domainname . '/' . $functionname . '?' . 'nCdServico=' . $i . '&nVlPeso=' . $parametros->nVlPeso . '&strDataCalculo=' . $parametros->strDataCalculo . '';
 
     try {

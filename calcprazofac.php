@@ -1,5 +1,12 @@
 <?php
 
+
+/**
+
+	ERRO ao tentar utilizar CalcPrecoFAC 
+	não importa o erro o retorno é:	"Codigo de servico inválido."
+	
+*/
 $domainname = 'http://ws.correios.com.br/calculador/CalcPrecoPrazo.asmx';
 //	/calculador/CalcPrecoPrazo.asmx/CalcPrecoFAC?nCdServico=string&nVlPeso=string&strDataCalculo=string HTTP/1.1
 
